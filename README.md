@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+### EJERCICIO TEMPORIZADOR
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+- Crear un temporizador que muestre el tiempo restante por cada segundo. Por defecto será de 10 segundos.
+- El temporizador mostrará el tiempo restante en segundos, con este formato: ```Tiempo restante: 10 segundos```.
+- El temporizador se ejecutará cuando se pulse el botón "Iniciar". Para ello se utilizará la función ```startTimer```;
+- El temporizador se detendrá cuando se pulse el botón "Detener". Para ello se utilizará la función ```stopTimer```;
+- El temporizador se reiniciará cuando se pulse el botón "Reiniciar". Para ello se utilizará la función ```resetTimer```;
+- El temporizador mostrará el mensaje ```¡Tiempo agotado!``` cuando el tiempo restante sea 0.
 
-In the project directory, you can run:
 
-### `npm start`
+## Bonus
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- El temporizador se para automáticamente cuando el tiempo restante sea 0.
+- El temporizador se reseta automáticamente cuando el tiempo restante sea 0.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### EJERCICIO Lista de la compra
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Crear una lista de la compra.
+- La lista de la compra mostrará los siguientes elementos: ```Leche, Pan, Tomates, Manzanas, Plátanos, Huevos, Arroz, Pasta, Aceite, Sal```.
+- Cada elemento tendrá que ser un componente de React.
+- Cada elemento tendrá que tener un botón que permita eliminarlo.
+- Cada elemento tendrá que tener un botón que permita tacharlo.
