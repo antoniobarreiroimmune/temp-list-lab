@@ -1,17 +1,48 @@
-const Timer = () => {
-  const startTimer = () => {};
-  const stopTimer = () => {};
-  const restTimer = () => {};
+import React, { useState } from "react";
 
-  return(
-    <div className="timer">
-      <h1>Temporizador</h1>
-    {/* ... */}
-    <div>
-        {/* buttons... */}
-      </div>
-    </div>
-  )
+const Timer = () => {
+    const [timeLeft, setTimeRes] = useState(10); 
+    const [timer, setTimer] = useState(null); 
+
+    const startTimer = () => {
+        if (!timer) {
+            const newTimer = setInterval(() => {
+                setTimeRes((prevTime) => {
+                    if (prevTime <= 1) {
+                        clearInterval(newTimer); 
+                        setTimer(null); //Hace que se detenga, antes no lo hacía y no dejaba volver a iniciar sin pararlo :(
+                        return 0; 
+                    } else {
+                        return prevTime - 1; 
+                    }
+                });
+            }, 1000); 
+            setTimer(newTimer); 
+        }
+    };
+
+    const stopTimer = () => {
+        if (timer) {
+            clearInterval(timer); 
+            setTimer(null); 
+        }
+    };
+
+    const resetTimer = () => {
+        stopTimer(); 
+        setTimeRes(10); 
+    };
+
+    return (
+        <div>
+            <h1>Temporizador: {timeLeft > 0 ? timeLeft : '¡Tiempo agotado!'}</h1>
+            <div>
+                <button onClick={startTimer}>Iniciar</button>
+                <button onClick={stopTimer}>Detener</button>
+                <button onClick={resetTimer}>Reiniciar</button>
+            </div>
+        </div>
+    );
 };
 
 export default Timer;
