@@ -10,7 +10,6 @@ const Timer = () => {
                 setTimeRes((prevTime) => {
                     if (prevTime <= 1) {
                         clearInterval(newTimer); 
-                        setTimer(null); //Hace que se detenga, antes no lo hacía y no dejaba volver a iniciar sin pararlo :(
                         return 0; 
                     } else {
                         return prevTime - 1; 
