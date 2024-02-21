@@ -32,6 +32,7 @@ const Timer = () => {
         setTimeRes(10); 
     };
 
+
     return (
         <div>
             <h1>Temporizador: {timeLeft > 0 ? timeLeft : '¡Tiempo agotado!'}</h1>
